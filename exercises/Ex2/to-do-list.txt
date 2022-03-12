@@ -2,5 +2,4 @@
 main page:
 
 1) add line under - Our services
-2) change photos to my bussiness
-3) change footer logo color
+3) logos - vertical text
