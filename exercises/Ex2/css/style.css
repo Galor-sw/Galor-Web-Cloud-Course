@@ -2,7 +2,7 @@
 padding: 0;
 }
 
-main section a{
+header, main, footer, nav, aside, section{
     display: block;
 }
 
@@ -11,29 +11,31 @@ body{
 }
 
 #wrapper{
-    width: 95%;
+    width: 100%;
+    padding-left: 25px;
     margin: 0 auto;
+}
+header .logo{
+    padding-left: 25px;
 }
 
 .logo{
     margin-top: 30px;
-}
+    display: flex;
+  }
 
-.logo span{
+.logo div{
     color: #000000;
     font-weight: bold;
     height: 45px;
-
+    line-height: 45px;
     }
 
 
 a{
     text-decoration: none;
-    color: #949299;
    }
-   a:hover{
-       font-weight: bold;
-   }
+
 
 p {
     color: #7D7987;
@@ -48,6 +50,7 @@ button{
    }
 
 .selected{
+    opacity: 1;
     color: black;
     font-weight: bold;
 }
@@ -57,9 +60,16 @@ nav{
 }
 
 nav a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F1534;
     margin-right: 40px;
+    opacity: 0.5;
 }
-
+nav a:hover{
+    opacity: 1;
+    font-weight: bold;
+}
 h1 {
     margin-top: 80px;
     font-size: 42px;
@@ -98,17 +108,25 @@ h2{
     background-color: #458FF6;
     border: none;
 }
+.rectangle-decorate{
+    width: 54px;
+    border: solid 1px;
+}
+
+.service-explain .rectangle-decorate{
+    margin-top:14px ;
+    margin-left: 76px;
+}
 
 .services{
     margin-top: 100px;
 }
 
 .service-explain p {
-    margin-top: 30px;
+    margin-top: 14px;
     max-width:950px ;
 }
 #articles{
-    margin-top: 100px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 34px;
@@ -116,14 +134,21 @@ h2{
 }
 
 article{
+    color: #000000;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
     width: 350px;
     position: relative;
     overflow: hidden;
     }
-
-    .main-page-article article div{
+.service-explain{
+    margin-bottom: 30px;
+}
+.main-page-article{
+    margin-top: 100px;
+}
+.main-page-article article div{
+    margin-top: 30px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -152,6 +177,11 @@ h3{
     font-weight: bold;
     }
 
+.customer-testimonials-article-data button{
+    background: none;
+    border: none;
+}
+
 .end-articles-button{
     background-color: #FFFFFF;
     border: 1.4px solid #458FF6;
@@ -167,24 +197,27 @@ footer{
         margin-top: 355px;
     }
 
-.wrapper{
+.package{
     width: 95%;
     margin: 0 auto;
     padding-top: 25px;
     }
 
-
-.footer-nav a{
+    .footer-nav a{
     color: #FFFFFF;
+    font-weight: 700;
+    opacity: 1;
+    font-size: 20px;
 }
 
-.footer-logo{
+footer .logo{
     margin-top: 79px;
 }
 
 footer p {
     color: #FFFFFF;
     margin-top: 135px;
+    font-weight: 300;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -198,7 +231,7 @@ footer p {
 }
 
 .customer p {
-    margin-top: 22px;
+    margin-top: 10px;
     max-width: 420px;
     font-size: 19px;
     color: #FFFFFFE5;
@@ -220,10 +253,20 @@ footer p {
     font-size: 18px;
 }
 
+.testi-services{
+    margin-top: 70px;
+}
+.customer-testimonials{
+    margin-top: 59px;
+}
 .customer-testimonials article{
     height: 512px;
-    }
+}
 
+.package .rectangle-decorate{
+    margin-top: 10px;
+    margin-left: 146px;
+}
 
 .customer-testimonials-article-data{
     height: 269px;
@@ -241,6 +284,9 @@ footer p {
     margin-top: 12px;
 }
 
-.customer-testimonials-article-data a{
+.read-more{
+    font-size: 17px;
+    font-weight: 600;
+    color: #4089ED;
     margin-top: 25px;
     }
