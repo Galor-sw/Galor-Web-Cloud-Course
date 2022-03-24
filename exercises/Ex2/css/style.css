@@ -129,6 +129,7 @@ h2{
 }
 
 .service-explain p {
+    line-height: 24px;
     margin-top: 14px;
     max-width:950px ;
 }
@@ -175,6 +176,8 @@ article{
 
 article p{
     color: #7D7987;
+    height: 84px;
+    line-height: 28px;
     max-width: 261px;
     }
 
@@ -240,6 +243,7 @@ footer p {
 }
 
 .customer p {
+    line-height: 24px;
     margin-top: 10px;
     max-width: 420px;
     font-size: 19px;
@@ -285,17 +289,19 @@ footer p {
 
 .customer-testimonials-article-data h4{
     font-weight: bold;
-    margin-top: 21px;
+    margin-top: 25px;
     font-size: 21px;
 }
 
 .customer-testimonials-article-data p {
+    height: 84px;
+    line-height: 28px;
     margin-top: 12px;
 }
 
 .read-more{
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 300;
     color: #4089ED;
     margin-top: 25px;
     }
