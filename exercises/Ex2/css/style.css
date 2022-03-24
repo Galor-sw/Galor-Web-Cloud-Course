@@ -298,7 +298,9 @@ footer p {
     line-height: 28px;
     margin-top: 12px;
 }
-
+.customer-testimonials-article-data p img{
+   margin-left: 10px;
+}
 .read-more{
     font-size: 17px;
     font-weight: 300;
