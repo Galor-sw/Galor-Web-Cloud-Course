@@ -1,13 +1,3 @@
-// innvoked function immidiatly call when <script> run
-// variables method and function will write in camelCase, theres 'google guideline' to understand how to work with js roles
-
-// //add object to the html dom
-// let newObj = document.ceateElement("h1");
-// newObj.className='msg';
-// let formObj = document.getElementById("frm");
-// formObj.appendChild(newObj);
-// // or
-// formObj.prepend(newObj);
 var counter = 0;
 
 function doSome() {
