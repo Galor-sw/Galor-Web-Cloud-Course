@@ -19,6 +19,7 @@ function addRectangles() {
   let i = 0;
   while (i < 23) {
     let newRectangle = document.createElement("div");
+    newRectangle.innerHTML ="<a></a>"
     let randOpacity = Math.random();
 
     newRectangle.setAttribute("style", `opacity:${randOpacity};`);
