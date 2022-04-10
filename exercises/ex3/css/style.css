@@ -2,12 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
 @viewport {
   width: 480px;
   zoom: 1;
 }
-
 header,
 main,
 footer,
@@ -16,32 +14,26 @@ aside,
 section {
   display: block;
 }
-
 #wrapper-LO1 {
   width: 1000px;
   margin: 0px auto;
   position: relative;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 header {
   width: 100%;
   position: relative;
 }
-
 .header-LO1 {
   height: 388px;
   background-color: aquamarine;
   position: relative;
 }
-
 .LO1-header-left-div {
   width: 27.2%;
 }
@@ -51,7 +43,6 @@ header {
   right: 0px;
   width: 72.8%;
 }
-
 .logo {
   padding-top: 28px;
   margin-left: 26px;
@@ -62,7 +53,6 @@ header {
   grid-template-columns: auto auto auto;
   text-align: center;
 }
-
 li a {
   display: block;
   height: 57px;
@@ -72,32 +62,26 @@ li a {
 }
 li a:hover {
   background-color: red;
-  
 }
-
 .selected {
   background-color: red;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 main {
   display: flex;
   background-color: #000000;
 }
-
 .main-LO1 {
   height: 491px;
 }
-
 main article {
   background-color: aquamarine;
 }
-
 .main-LO1-left {
   height: 100%;
   width: 27.2%;
   position: relative;
 }
-
 .main-LO1-left article {
   position: absolute;
   top: 24px;
@@ -106,13 +90,11 @@ main article {
   height: 33px;
   background-color: aquamarine;
 }
-
 .main-LO1-right {
   display: flex;
   position: relative;
   width: 72.8%;
 }
-
 .main-LO1-right article {
   margin-top: 31px;
 }
@@ -120,22 +102,18 @@ main article {
   width: 335px;
   height: 389px;
 }
-
 .main-LO1-right .rectangle {
   margin-left: 25px;
 }
-
 .rectangle {
   width: 338px;
   height: 338px;
 }
-
 footer {
   height: 121px;
   background-color: darkgrey;
   width: 100%;
 }
-
 /**********************************************************************************************/
 #wrapper-LO2 {
   width: 1400px;
@@ -143,12 +121,10 @@ footer {
   position: relative;
   margin: 0px auto;
 }
-
 .header-LO2 {
   height: 192px;
   background-color: #000000;
 }
-
 .main-LO2 {
   height: 1687px;
 }
@@ -162,30 +138,24 @@ footer {
   width: 243px;
   background-color: pink;
 }
-
 .main-center-section-LO2 {
   width: 818px;
 }
-
 .main-LO2-top {
   display: flex;
 }
-
 .main-LO2 {
   height: 1687px;
 }
-
 .main-LO2 aside {
   width: 339px;
   height: 100%;
   background-color: pink;
   position: relative;
 }
-
 .main-center-section-LO2 .rectangle {
   margin-left: 30px;
 }
-
 .main-LO2-bottom {
   margin-top: 120px;
   display: grid;
@@ -194,7 +164,6 @@ footer {
 .rectangle.bottom {
   margin-top: 48px;
 }
-
 .right {
   position: relative;
 }
@@ -202,42 +171,34 @@ footer {
   position: absolute;
   top: 53%;
   transform: translate(0, -50%);
-
   right: 82px;
-  /* top: 217px; */
 }
-
 .gray-rectangle {
   position: absolute;
   background-color: grey;
   width: 128px;
 }
-
 .gray-rectangle.top {
   top: 66px;
   right: 41px;
   height: 338px;
 }
-
 .gray-rectangle.bottom {
   height: 125px;
   bottom: 34px;
   left: 106px;
 }
-
 /****************************************************************************************/
 .header-LO3 {
   display: flex;
   flex-wrap: wrap;
 }
-
 .LO3-header-left-box {
   width: 50%;
   height: 500px;
   background-color: #000000;
   position: relative;
 }
-
 .LO3-header-right-box {
   width: 50%;
   height: 500px;
@@ -250,7 +211,6 @@ footer {
   width: 50%;
   height: 50%;
 }
-
 .LO3-header-right-box .R1 {
   opacity: 0.1;
 }
@@ -263,56 +223,63 @@ footer {
 .LO3-header-right-box .R4 {
   opacity: 0.75;
 }
-
 .LO3-header-left-box nav {
   width: 100%;
   position: absolute;
   bottom: 0px;
 }
-
-.LO3-plus-add-rectangle {
+.LO3-plus {
   width: 86px;
   height: 86px;
-  /* background-image: url('images/plus.png'); */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-
 #main-LO3 {
   min-height: 500px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
 }
-
-#main-LO3 div{
+.dynamic-Rectangle {
+  position: relative;
   width: 25%;
   height: 250px;
-  background-color: #000000;
-  opacity: 0.3;
 }
-
+.black {
+  background-color: #000000;
+}
+.pink {
+  background-color: pink;
+}
+.dynamic-Rectangle:hover {
+  background-color: indianred;
+}
+#restartImg {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("/images/restart.png");
+}
 /****************************************************************************************/
 /* responsive layout-3 */
 /****************************************************************************************/
-
 @media only screen and (max-width: 600px) {
   #wrapper-LO1 {
     width: 100%;
   }
-
   .LO3-header-right-box {
     visibility: hidden;
     display: none;
   }
-
   .LO3-header-left-box {
     width: 100%;
   }
-
   .logo {
     padding-top: 100px;
     margin-left: 0px;
@@ -320,16 +287,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #main-LO3 div{
+  .dynamic-Rectangle {
     width: 50%;
-    height: 250px;
-    background-color: #000000;
-    opacity: 0.3;
-  }
-
-  #main-LO3 div a{
-    display: block;
-    width: 100%;
-    height: 100%;
+    height: 200px;
   }
 }
