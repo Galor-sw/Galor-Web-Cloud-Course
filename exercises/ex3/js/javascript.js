@@ -7,9 +7,12 @@ function increasOpacity() {
 
   if (changeRectangle.style.opacity >= 1) {
     let addRestart = document.getElementById("left-header");
-    if (addRestart.lastChild.id != 'restartImg') {
+    if (addRestart.lastChild.id != "restartImg") {
       let restart = document.createElement("div");
-      restart.id="restartImg";
+      restart.id = "restartImg";
+      let img = document.createElement("img");
+      img.setAttribute("src", `images/restart.png`);
+      restart.appendChild(img);
       restart.setAttribute("onclick", `restartFunc()`);
       let div = document.getElementById("left-header");
       div.appendChild(restart);
