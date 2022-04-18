@@ -17,22 +17,25 @@
       <h1>Regesteration Form</h1>
       <form
         action="http://se.shenkar.ac.il/teach/web1/get_form3.php"
+        onsubmit='return handleCheckbox()'
         method="GET"
       >
         <div class="input-group mb-3">
-          <span class="input-group-text w-25" id="inputGroup-sizing-default"
+          <span class="input-group-text col-sm-2" id="inputGroup-sizing-default"
             >Full Name:</span
           >
           <input
             type="text"
-            class="form-control"
+            class="form-control col-sm-2"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             name="fullName"
+            pattern="^\s*[a-zA-Z]+[ ][a-zA-z]+\s*$"
+            placeholder="Enter your full name"
           />
         </div>
         <div class="input-group mb-3">
-          <span class="input-group-text w-25" id="inputGroup-sizing-default"
+          <span class="input-group-text col-sm-2" id="inputGroup-sizing-default"
             >Password:</span
           >
           <input
@@ -42,10 +45,11 @@
             aria-describedby="inputGroup-sizing-default"
             name="pass"
             pattern="^[a-zA-Z0-9_]{5,10}"
+            placeholder="Password"
           />
         </div>
         <div class="input-group mb-3">
-          <span class="input-group-text w-25" id="inputGroup-sizing-default"
+          <span class="input-group-text col-sm-2" id="inputGroup-sizing-default"
             >Email:</span
           >
           <input
@@ -54,10 +58,11 @@
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             name="mail"
+            placeholder="Enter email"
           />
         </div>
         <div class="input-group mb-3">
-          <span class="input-group-text w-25" id="inputGroup-sizing-default"
+          <span class="input-group-text col-sm-2" id="inputGroup-sizing-default"
             >Website:</span
           >
           <input
@@ -66,11 +71,12 @@
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             name="website"
+            placeholder="Enter url site, example: http://ynet.co.il"
           />
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >Phone:</span
           >
@@ -81,11 +87,12 @@
             aria-describedby="inputGroup-sizing-default"
             name="phone"
             pattern="[0-9]{9,10}"
+            placeholder="Enter your phone number"
           />
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >Number Of Coffee:</span
           >
@@ -97,35 +104,44 @@
             name="coffe"
             min="1"
             max="5"
+            placeholder="Number of coffee"
           />
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >coffee Temperature:</span
           >
-          <input
-            type="range"
-            class="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
-            name="temper"
-            min="80"
-            max="99"
-          />
+          <div class="form-control">
+            80
+            <input
+              type="range"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+              name="temper"
+              min="80"
+              max="99"
+            />
+            99
+          </div>
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >Address:</span
           >
-          <textarea name="address" rows="2" class="form-control"></textarea>
+          <textarea
+            name="address"
+            rows="2"
+            class="form-control"
+            placeholder="Your address"
+          ></textarea>
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >Interests:</span
           >
@@ -137,7 +153,7 @@
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
                 name="interests[]"
-                value="latte"
+                value="Latte"
               />
               <label class="form-check-label">Latte</label>
             </div>
@@ -148,7 +164,7 @@
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
                 name="interests[]"
-                value="moka"
+                value="Moka"
               />
               <label class="form-check-label">Moka</label>
             </div>
@@ -159,7 +175,7 @@
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
                 name="interests[]"
-                value="moka"
+                value="Americano"
               />
               <label class="form-check-label">Americano</label>
             </div>
@@ -170,7 +186,7 @@
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
                 name="interests[]"
-                value="espresso"
+                value="Espresso"
               />
               <label class="form-check-label">Espresso</label>
             </div>
@@ -178,7 +194,7 @@
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >Gender:</span
           >
@@ -191,7 +207,7 @@
         </div>
         <div class="input-group mb-3">
           <span
-            class="input-group-text w-25 w-12"
+            class="input-group-text col-sm-2 w-12"
             id="inputGroup-sizing-default"
             >Age:</span
           >
